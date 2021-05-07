@@ -1,4 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+:root {
+  --first-color: #b93a35;
+  --first-color-light: #dd5954da;
+
+}
+
+.brand .title {
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 25px;
+  padding-right: 15px;
+}
+
+.brand span {
+  color: var(--first-color);
+  font-family: 'Orbitron', cursive;
+  font-size: 25px;
+  text-shadow: 5px -1px 2px black;
+}
 
 /*  styling scrollbars  */
 ::-webkit-scrollbar {
@@ -12,7 +33,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #3ea175;
+  background: var(--first-color-light);
   border-radius: 10px;
 }
 
@@ -100,8 +121,8 @@ body {
 }
 
 .navbar__left .active_link {
-  color: #265acc;
-  border-bottom: 3px solid #265acc;
+  color: #384454;
+  border-bottom: 3px solid #384454;
   padding-bottom: 12px;
 }
 
@@ -311,7 +332,7 @@ main {
 /*  SIDEBAR STARTS HERE  */
 
 #sidebar {
-  background: #020509;
+  background: #384454;
   grid-area: sidebar;
   overflow-y: auto;
   padding: 20px;
@@ -349,7 +370,7 @@ main {
 }
 
 .sidebar__menu > h2 {
-  color: #3ea175;
+  color: var(--first-color-light);
   font-size: 16px;
   margin-top: 15px;
   margin-bottom: 5px;
@@ -365,12 +386,13 @@ main {
 }
 
 .active_menu_link {
-  background: rgba(62, 161, 117, 0.3);
-  color: #3ea175;
+  background: rgb(161 62 62 / 30%);
+  color: var(--first-color-light);
+
 }
 
 .active_menu_link a {
-  color: #3ea175 !important;
+  color: var(--first-color-light) !important;
 }
 
 .sidebar__link > a {
